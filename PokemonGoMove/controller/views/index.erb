@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>Pokemon Go GPS Controller</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles/flat-ui.min.css">
+    <style type="text/css">
+/*
+      .buttons { margin-top: 20px; width: 300px; text-align: center; }
+      .buttons .move-btn { padding: 40px 40px; margin: 10px; }
+      .buttons .btn-center { margin: 10px auto; display: block; }
+*/
+      hr{
+        border-top-color: #CCD1D9;
+        width: 75%;
+        clear: both;
+        margin-top: 54px;
+      }
+    </style>
+  </head>
+  <body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+          <div>
+
+            <h5>Option A</h5>
+            <div class="input-group">
+              <input id="address" type="text" class="form-control search-query" placeholder="Enter address here...">
+              <span class="input-group-btn">
+                <button id="address-button" type="submit" class="btn btn-primary" data-type="last">Set</button>
+              </span>
+            </div>
+            <br>
+                <h5>Option B</h5>
+                Latitude,Longitude: <input id="latandlong" type="text" class="form-control"/>
+                <br>
+                    <button id="location-button" class="btn btn-primary pull-right">Set</button>
+                <br>
+            <br>
+                Current Latitude: <input id="latitude" type="text" class="form-control"/>
+                Current Longitude: <input id="longitude" type="text" class="form-control"/>
+
+                            <h5>Option C</h5>
+                <p>Select a preset city</p>
+                <select id="location-select" class="selecter_5 selecter-element">
+                  <option value="London, UK">London</option>
+                  <option value="Los Angeles, CA">Los Angeles</option>
+                  <option value="New York, NY">New York</option>
+                  <option value="San Francisco, CA">San Francisco</option>
+                  <option value="Sydney, Australia">Sydney</option>
+                </select>
+                <button id="location-change-button" class="btn btn-primary pull-right">Change location</button>
+            <br>
+            <br>
+            <h5>Option D:</h5>
+            <p>You can use arrow keys (up, down, left, right)</p>
+
+            <h5>Option F: </h5>
+            <p>You can click on a destination on the top-right map to walk there</p>
+            <button id="stop-walking" class="btn btn-primary pull-right">Stop Walking</button>
+
+          </div>
+        </div>
+        <div class="col-sm-8">
+            <div style="width: 20px; height: 20px; background: red; position: absolute; z-index: 100; top: 50%; left: 50%;"></div>
+            <div id="map" style="width: auto; height: 50vh;"></div>
+        </div>
+        <div class="col-sm-8">
+          <br><button id="start-walking" class="btn btn-primary pull-right">Start Walking</button>
+          <button id="repeat-walking" class="btn btn-primary pull-right">Repeat Walking</button><br>
+          <br>
+              <h5>Multi Dests Move Speed(1 - 10):
+                <input id="speed" type="text" size="4" value="2"></input>
+              </h5>
+              <textarea id="multi" type="text" rows="8" cols="50"></textarea>
+              <button id="multi-move" class="btn btn-primary pull-right">Multi Move</button>
+              <button id="del-last" class="btn btn-primary pull-right">Delete Last Point</button>
+              <button id="move-button" class="btn btn-primary pull-right">Move To Last Point</button>
+              <button id="set-speed" class="btn btn-primary pull-right">Set Speed</button>
+              Last Point: <input id="multi1" type="text" size="40"/>
+          <br>
+      </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </body>
+</html>

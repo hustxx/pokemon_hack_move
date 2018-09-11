@@ -1,0 +1,26 @@
+<!-- speed: 2
+ -->
+<gpx creator="Xcode" version="1.1">
+    <wpt lat="39.736167803353666" lon="-104.96456162251968"><name>PokemonLocation</name>
+        <time>2018-08-07T02:33:49Z</time></wpt>
+    <wpt lat="39.73483122009292" lon="-104.96443287648697"><name>PokemonLocation</name>
+        <time>2018-08-07T02:35:03Z</time></wpt>
+    <wpt lat="39.734798217709205" lon="-104.96537701406021"><name>PokemonLocation</name>
+        <time>2018-08-07T02:35:43Z</time></wpt>
+    <wpt lat="39.73285104910244" lon="-104.96430413045425"><name>PokemonLocation</name>
+        <time>2018-08-07T02:37:40Z</time></wpt>
+    <wpt lat="39.73291705571859" lon="-104.95915428914566"><name>PokemonLocation</name>
+        <time>2018-08-07T02:41:20Z</time></wpt>
+    <wpt lat="39.731431891567446" lon="-104.95949761189956"><name>PokemonLocation</name>
+        <time>2018-08-07T02:42:43Z</time></wpt>
+    <wpt lat="39.73126687135328" lon="-104.96421829976578"><name>PokemonLocation</name>
+        <time>2018-08-07T02:46:05Z</time></wpt>
+    <wpt lat="39.72931960299396" lon="-104.96438996114273"><name>PokemonLocation</name>
+        <time>2018-08-07T02:47:53Z</time></wpt>
+    <wpt lat="39.72928659797148" lon="-104.96825234212417"><name>PokemonLocation</name>
+        <time>2018-08-07T02:50:38Z</time></wpt>
+    <wpt lat="39.736052297181445" lon="-104.96838108815689"><name>PokemonLocation</name>
+        <time>2018-08-07T02:56:54Z</time></wpt>
+    <wpt lat="39.73618430421962" lon="-104.96473328389663"><name>PokemonLocation</name>
+        <time>2018-08-07T02:59:30Z</time></wpt>
+</gpx>
